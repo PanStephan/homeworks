@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Новостное агентство</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+
+<body>
+
+	<header>
+		<div id="black-bar">
+			<div class="fixed-container">
+				Самые <a href="#">свежие новости</a> в реальном времени
+				<div id="datetime"> 12:30 19.06.2018</div>
+			</div>
+		</div>
+		<div id="header">
+			<div class="fixed-container">
+				<img id="logo-header" src="img/logo-header.png" alt="Логотип">			
+			</div>
+			<div class="fixed-container">
+				<form action=".php" method="post" class="fixed-form" enctype="multipart/form-data">
+   					<select name="hero[]" class="select-color">
+    					<option selected value="Москва">Москва</option>
+    					<option value="Самара">Самара</option>
+   					</select>
+  				</form>	
+  				<img class="weather" src="img/weather.png" alt="Погода">
+  				<nav>
+					<div class="search">
+						<form action=".php" method="post" enctype="multipart/form-data">
+							<input type="text" placeholder="Поиск по сайту " name="site-search" id="site-search">
+							<button type="submit" name="submit-button"></button>
+						</form>
+					</div>
+				</nav>	
+  			</div>	
+		</div>
+		<div id="menu-container">
+			<div class="fixed-container">
+				<nav>							<!-- тут можно сделать как-то красиво, но я не знаю, как:( -->
+					<a href="#">Главная</a> <span class="fixed-menu">/</span>  
+					<a href="#">Политика</a> <span class="fixed-menu">/</span> 
+					<a href="#">Общество</a> <span class="fixed-menu">/</span> 
+					<a href="#">Экономика</a> <span class="fixed-menu">/</span>  
+					<a href="#">В мире</a> <span class="fixed-menu">/</span>  
+					<a href="#">Происшествия</a> <span class="fixed-menu">/</span>  
+					<a href="#">Спорт</a> <span class="fixed-menu">/</span>  
+					<a href="#">Наука</a> <span class="fixed-menu">/</span> 
+					<a href="#">Туризм</a> 
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<div id="central-container">
+		<div class="fixed-container">
+			<article id="column-left">
+				<h2>Новости дня</h2>
+				<div class="news-item">
+					<div class="news-item-text">
+						Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
+					</div>
+					<div class="news-item-props">
+						<a href="#">/ЧМ по футболу</a>
+						<div class="news-time">10:45</div>
+						<div class="news-comments-count">17</div>
+					</div>
+				</div>
+				<div class="news-item">
+					<div class="news-item-text">
+						Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
+					</div>
+					<div class="news-item-props">
+						<a href="#">/ЧМ по футболу</a>
+						<div class="news-time">10:45</div>
+						<div class="news-comments-count">17</div>
+					</div>
+				</div>	
+				<div class="news-item">
+					<div class="news-item-text">
+						Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
+					</div>
+					<div class="news-item-props">
+						<a href="#">/ЧМ по футболу</a>
+						<div class="news-time">10:45</div>
+						<div class="news-comments-count">17</div>
+					</div>
+				</div>	
+				<div class="news-item">	
+					<div class="news-item-text">
+						Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
+					</div>
+					<div class="news-item-props">
+						<a href="#">/ЧМ по футболу</a>
+						<div class="news-time">10:45</div>
+						<div class="news-comments-count">17</div>
+					</div>	
+				</div>
+				<div class="news-item">
+					<div class="news-item-text">
+						Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
+					</div>
+					<div class="news-item-props">
+						<a href="#">/ЧМ по футболу</a>
+						<div class="news-time">10:45</div>
+						<div class="news-comments-count">17</div>
+					</div>	
+				</div>		
+				<div class="news-item">
+					<div class="news-item-text">
+						Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
+					</div>
+					<div class="news-item-props">
+						<a href="#">/ЧМ по футболу</a>
+						<div class="news-time">10:45</div>
+						<div class="news-comments-count">17</div>
+					</div>
+				</div>	
+				<div class="all-news">
+					<a href="#">Все новости</a>
+				</div>
+			</article>
+
+			<main id="column-center">
+					<a href="" class="right-item-props">/Политика</a>
+					<a href="" class="right-item-prop">В Крыму отреагировали на <br> слова Кравчука <br> о возврате полуострова</a>
+				<div class="right-item-time">10:40</div> 
+					<small class="right-date"> 19 июня 2018 </small>
+					<img src="img/crimea-main-banner.png" class="fixed-main-banner" alt="Фото Крыма">
+					<img src="img/navalniy.png" class="botom-main-navalniy" alt="Фото Навального">
+					<img src="img/passport.png" class="botom-main-passport" alt="Фото паспорта"> 
+				<div class="navalniy-content">Алексей Навальный объявил <br> акцию против пенсионной <br> реформы 1 июля</div>
+					<div class="navalniy-href">
+						<a href="#" class="navalniy-color">/Политика</a>
+					</div>						
+						<div class="right-news-time">10:45</div>
+						<div class="right-news-comments-count">17</div>
+				<div class="passport-content">Дума увеличила пошлины <br> за выдачу загранпаспортов <br> и водительских прав</div>
+				<div class="passport-props">
+					<div class="navalniy-href">
+						<a href="#" class="navalniy-color">/Общество</a>
+					</div>						
+						<div class="right-news-time">10:45</div>
+						<div class="right-news-comments-count">17</div>
+				</div>	
+				<img src="img/stream.png" class="botom-main-stream" alt="Фото девушки">	
+				<img src="img/football.png" class="botom-main-football" alt="Фото футболиста">
+					<div class="navalniy-content"> В России заработал <br> стриминговый сервис <br> YouTube </div>
+					<div class="navalniy-href">
+						<a href="#" class="navalniy-color">/интернет</a>
+					</div>						
+						<div class="right-news-time">10:45</div>
+						<div class="right-news-comments-count">17</div>
+					<div class="passport-content"> Кейн признан лучшим <br> игроком матча ЧМ-2018 <br> Тунис — Англия </div>
+				<div class="passport-props">
+					<div class="navalniy-href">
+						<a href="#" class="navalniy-color">/Политика</a>
+					</div>						
+						<div class="right-news-time">10:45</div>
+						<div class="right-news-comments-count">17</div>
+				</div>			
+			</main>
+			<aside id="column-right">
+				<img src="img/banner-1.png" alt="реклама машины">
+				<img src="img/banner-2.png" alt="реклама зала">
+			</aside>	
+		</div>	
+		
+		<div class="fixed-container">
+			<div id="special-news">
+				<img src="img/track.png" class="valid-track" alt="Грузовик">
+		
+		<div class="collum-news">
+			<h2>Новости дня</h2>
+			<div class="news-item-main">
+				<div class="news-item-text-main">
+						Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
+					</div>
+					<div class="news-item-props-main">
+						<a href="#">/ЧМ по футболу</a>
+						<div class="news-time-main">10:45</div>
+						<div class="news-comments-count-main">17</div>
+					</div>
+			</div>
+			<div class="news-item-main">
+				<div class="news-item-text1">
+					Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
+				</div>
+				<div class="news-item-props-main">
+					<a href="#">/ЧМ по футболу</a>
+					<div class="news-time-main">10:45</div>
+					<div class="news-comments-count-main">17</div>
+				</div>
+			</div>
+			<div class="news-item-main">
+				<div class="news-item-text-main">
+					Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
+				</div>
+				<div class="news-item-props-main">
+					<a href="#">/ЧМ по футболу</a>
+					<div class="news-time-main">10:45</div>
+					<div class="news-comments-count-main">17</div>
+				</div>
+				</div>	
+			</div>
+		</div>
+		</div>	
+	</div>
+	<footer>
+		<div class="footer-style">
+			<div class="fixed-container">
+				<nav class="footer-nav">
+					<div class="fixed-a">
+						<a href="">Главная</a>
+					</div>
+					<div class="fixed-a">
+						<a href="">Политика</a>
+					</div>
+					<div class="fixed-a">
+						<a href="">Общество</a>
+					</div>
+					<div class="fixed-a">
+						<a href="">Экономика</a>
+					</div> 
+					<div class="fixed-a">
+						<a href="">В мире</a> 
+					</div>
+				</nav>
+				<nav class="footer-nav-continue">
+					<div class="fixed-a">
+						<a href="">Происшествия</a> 
+					</div>
+					<div class="fixed-a">
+						<a href="">Спорт</a>
+					</div>
+					<div class="fixed-a">  
+						<a href="">Наука</a> 
+					</div>
+					<div class="fixed-a"> 
+						<a href="">Туризм</a>
+					</div> 
+				</nav>	
+				<img src="img/logo.png" class="logo-footer" alt="Логотип">
+				<div class="fixed-center">	
+					<div class="fixed-a">
+						<a href="">Об агенстве</a>
+					</div>
+					<div class="fixed-a">  
+						<a href="">Контакты</a> 
+					</div>
+					<div class="fixed-a"> 
+						<a href="">Опубликовать новость</a>
+					</div>
+				</div> 
+				<div class="fixed-social">
+				    <a href="#" class="social">
+           				<i class="fab fa-instagram"></i>
+         			</a>
+         			<a href="#" class="social">
+           				<i class="fab fa-twitter"></i>
+         			</a>
+         			<a href="#" class="social">
+           				<i class="fab fa-facebook"></i>
+         			</a>	
+           			<a href="#" class="social">
+           				<i class="fab fa-vk"></i>
+         			</a>
+         			<div class="footer-phone">
+         				<img src="img/phone.png" alt="Телефон">
+         				<div class="fixed-icon">+7 (499) 995-55-55</div>	
+         			</div>
+         			<div class="footer-mail">
+         				<img src="img/mail-icon.png" alt="Иконка почты">
+         				<div class="fixed-icon">info@agency.ru</div>
+         			</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-right">
+			<hr class="allright">
+			© Новостное агентство, 2017-2018 все права защищены
+		</div>
+	</footer>
+</body>
+</html>
